@@ -28,10 +28,18 @@ const ResourceCard = ({ resource }) => {
           </p>
           
           {/* Primary Button */}
-          <div className="pt-4 border-t border-gray-100">
-            <PrimaryButton href="/coming-soon" asLink={true} size="sm" className="w-full">
-              Learn More
-            </PrimaryButton>
+          <div className="pt-4 border-t border-gray-100 flex gap-2">
+            {resource.buttons ? (
+              resource.buttons.map((btn, i) => (
+                <PrimaryButton key={i} href={btn.href} asLink={true} size="sm" className="w-full">
+                  {btn.label}
+                </PrimaryButton>
+              ))
+            ) : (
+              <PrimaryButton href={resource.link || "/coming-soon"} asLink={true} size="sm" className="w-full">
+                Learn More
+              </PrimaryButton>
+            )}
           </div>
         </div>
     </div>

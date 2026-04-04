@@ -15,10 +15,14 @@ const page = () => {
     },
     {
       id: 2,
-      title: "Ministry Publication/News",
+      title: "Trademark Publication Journal",
       description:
-        "Stay updated with the latest announcements, policy changes, and official communications from the Ministry regarding IP matters.",
+        "Stay informed with our regularly updated publication journal, featuring newly published trademarks.",
       image: "/services2.jpg",
+      buttons: [
+        { label: "View Journal", href: "/coming-soon" },
+        { label: "View Publications", href: "https://portal.iponigeria.com/publications" },
+      ],
     },
     {
       id: 3,

@@ -88,6 +88,7 @@ export default function Home() {
             <div className="flex justify-center mt-7 gap-3">
               <PrimaryButton>Check Availability</PrimaryButton>
               <SecondaryButton>File an Application</SecondaryButton>
+              <PrimaryButton href="https://portal.iponigeria.com/publications">View Publications</PrimaryButton>
             </div>
           </div>
         </ScrollAnimation>
