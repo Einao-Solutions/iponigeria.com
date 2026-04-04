@@ -19,6 +19,7 @@ const ServiceCard = ({
   description,
   buttonText = "Learn More",
   onButtonClick,
+  href,
   className = "",
 }) => {
   return (
@@ -38,7 +39,9 @@ const ServiceCard = ({
         <div className="text-gray-100 w-47/48 mx-auto">
           <p className="text-xl font-semibold text-gray-200 mb-2">{title}</p>
           <p className="text-base font-light mb-4">{description}</p>
-          <SecondaryButton onClick={onButtonClick}>
+          <SecondaryButton
+            {...(href ? { href } : { onClick: onButtonClick })}
+          >
             {buttonText}
           </SecondaryButton>
         </div>
@@ -171,6 +174,7 @@ const ServicesCarousel = ({
                 title={service.title}
                 description={service.description}
                 buttonText={service.buttonText}
+                href={service.href}
                 onButtonClick={() => handleServiceClick(service)}
               />
             </CarouselItem>

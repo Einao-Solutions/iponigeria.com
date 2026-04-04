@@ -31,6 +31,7 @@ export default function Home() {
       description:
         "Stay updated on published applications.  Browse our official journal to view recently accepted Trademarks, Patents, and Designs.",
       buttonText: "View Journal",
+      href: "https://portal.iponigeria.com/publications",
     },
     {
       id: 3,
