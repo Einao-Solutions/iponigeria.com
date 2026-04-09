@@ -73,9 +73,9 @@ export default function ServiceFees() {
   ];
 
   const tabs = [
-    { key: 'trademark', label: 'Trademark Registry' },
-    { key: 'patent', label: 'Patent & Design Registry' },
-    { key: 'design', label: 'Design Registry' },
+    { key: 'trademark', label: 'Trademark Services' },
+    { key: 'patent', label: 'Patent Services' },
+    { key: 'design', label: 'Design Services' },
   ];
 
   const getServices = () => {
