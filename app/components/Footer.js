@@ -88,11 +88,19 @@ const Footer = () => {
               <Link href="/services" className="cursor-pointer">
                 <p>Our Services</p>
               </Link>
-              <Link href="/services" className="cursor-pointer">
+              <Link href="/resources" className="cursor-pointer">
                 <p>Resources</p>
               </Link>
               <Link href="/contact" className="cursor-pointer">
                 <p>Contact Us</p>
+              </Link>
+              <Link
+                href="https://www.pebec.gov.ng/reportgov-ng"
+                className="underline hover:text-gray-200 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>report.gov</p>
               </Link>
             </div>
           </div>

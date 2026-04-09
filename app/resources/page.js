@@ -21,11 +21,22 @@ const page = () => {
       image: "/services2.jpg",
       buttons: [
         { label: "View Journal", href: "/coming-soon" },
-        { label: "View Publications", href: "https://portal.iponigeria.com/publications" },
+        {
+          label: "View Publications",
+          href: "https://portal.iponigeria.com/publications",
+        },
       ],
     },
     {
       id: 3,
+      title: "Services and Fees",
+      description:
+        "Explore our comprehensive list of services and associated fees for trademark, patent, and design registrations.",
+      image: "/services1.jpg",
+      link: "/services-fees",
+    },
+    {
+      id: 4,
       title: "PDF and Video Guides on Portal Use",
       description:
         "Download detailed PDF manuals and watch instructional videos to master the IPO Nigeria portal for all your registration needs.",
