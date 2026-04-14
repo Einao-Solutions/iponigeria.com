@@ -8,10 +8,11 @@ const page = () => {
   const resourcesData = [
     {
       id: 1,
-      title: "Trademarks, Patents and Design Acts and Regulations",
+      title: "Trademarks, Patents and Designs Acts and Regulations",
       description:
         "Access comprehensive legal documentation including acts, regulations, and guidelines governing intellectual property protection in Nigeria.",
       image: "/gavel-scales-justice-law-books.jpg",
+      link: "/resources/acts-regulations",
     },
     {
       id: 2,
@@ -20,7 +21,7 @@ const page = () => {
         "Stay informed with our regularly updated publication journal, featuring newly published trademarks.",
       image: "/services2.jpg",
       buttons: [
-        { label: "View Journal", href: "/coming-soon" },
+        { label: "View Journal", href: "/resources/trademark-journal" },
         {
           label: "View Publications",
           href: "https://portal.iponigeria.com/publications",
@@ -59,7 +60,7 @@ const page = () => {
 
           <div className="mb-20">
             {/* Resources Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {resourcesData.map((resource, index) => (
                 <ScrollAnimation
                   key={resource.id}
