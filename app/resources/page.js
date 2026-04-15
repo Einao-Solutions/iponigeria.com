@@ -36,13 +36,13 @@ const page = () => {
       image: "/services1.jpg",
       link: "/services-fees",
     },
-    {
-      id: 4,
-      title: "PDF and Video Guides on Portal Use",
-      description:
-        "Download detailed PDF manuals and watch instructional videos to master the IPO Nigeria portal for all your registration needs.",
-      image: "/resource3.jpg",
-    },
+    // {
+    //   id: 4,
+    //   title: "PDF and Video Guides on Portal Use",
+    //   description:
+    //     "Download detailed PDF manuals and watch instructional videos to master the IPO Nigeria portal for all your registration needs.",
+    //   image: "/resource3.jpg",
+    // },
   ];
 
   return (
@@ -60,7 +60,7 @@ const page = () => {
 
           <div className="mb-20">
             {/* Resources Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {resourcesData.map((resource, index) => (
                 <ScrollAnimation
                   key={resource.id}
