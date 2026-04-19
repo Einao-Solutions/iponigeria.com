@@ -53,6 +53,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta httpEquiv="refresh" content="0; url=https://iponigeria.fmiti.gov.ng" />
+      </head>
       <body
         className={outfit.className} suppressHydrationWarning={true}
       >

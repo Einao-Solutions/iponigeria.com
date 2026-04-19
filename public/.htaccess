@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^iponigeria\.fmiti\.gov\.ng$ [NC]
+RewriteRule ^(.*)$ https://iponigeria.fmiti.gov.ng/$1 [R=301,L]

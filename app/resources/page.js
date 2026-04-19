@@ -8,7 +8,7 @@ const page = () => {
   const resourcesData = [
     {
       id: 1,
-      title: "Trademarks, Patents and Designs Acts and Regulations",
+      title: "Trademark, Patent and Design Acts and Regulations",
       description:
         "Access comprehensive legal documentation including acts, regulations, and guidelines governing intellectual property protection in Nigeria.",
       image: "/gavel-scales-justice-law-books.jpg",
