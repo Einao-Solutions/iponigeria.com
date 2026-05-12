@@ -9,41 +9,41 @@ const journals = [
   {
     year: 2025,
     files: [
-      { label: "Volume 1", file: "/journals/2025/trademark-journal-vol1.pdf" },
-      { label: "Volume 2", file: "/journals/2025/trademark-journal-vol2.pdf" },
+      // { label: "Volume 1", file: "/journals/2025/trademark-journal-vol1.pdf" },
+      // { label: "Volume 2", file: "/journals/2025/trademark-journal-vol2.pdf" },
     ],
   },
   {
     year: 2024,
     files: [
-      { label: "Volume 1", file: "/journals/2024/trademark-journal-vol1.pdf" },
-      { label: "Volume 2", file: "/journals/2024/trademark-journal-vol2.pdf" },
-      { label: "Volume 3", file: "/journals/2024/trademark-journal-vol3.pdf" },
+      // { label: "Volume 1", file: "/journals/2024/trademark-journal-vol1.pdf" },
+      // { label: "Volume 2", file: "/journals/2024/trademark-journal-vol2.pdf" },
+      // { label: "Volume 3", file: "/journals/2024/trademark-journal-vol3.pdf" },
     ],
   },
   {
     year: 2023,
     files: [
-      { label: "Volume 1", file: "/journals/2023/trademark-journal-vol1.pdf" },
-      { label: "Volume 2", file: "/journals/2023/trademark-journal-vol2.pdf" },
+      // { label: "Volume 1", file: "/journals/2023/trademark-journal-vol1.pdf" },
+      // { label: "Volume 2", file: "/journals/2023/trademark-journal-vol2.pdf" },
     ],
   },
   {
     year: 2022,
     files: [
-      { label: "Volume 1", file: "/journals/2022/trademark-journal-vol1.pdf" },
+      // { label: "Volume 1", file: "/journals/2022/trademark-journal-vol1.pdf" },
     ],
   },
   {
     year: 2021,
     files: [
-      { label: "Volume 1", file: "/journals/2021/trademark-journal-vol1.pdf" },
+      // { label: "Volume 1", file: "/journals/2021/trademark-journal-vol1.pdf" },
     ],
   },
   {
     year: 2020,
     files: [
-      { label: "Volume 1", file: "/journals/2020/trademark-journal-vol1.pdf" },
+      // { label: "Volume 1", file: "/journals/2020/trademark-journal-vol1.pdf" },
     ],
   },
 ];
@@ -108,30 +108,26 @@ const page = () => {
                 <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
               </div>
 
-              {/* PDF List */}
+              {/* Portal Notice */}
               {selectedJournal ? (
-                <div className="space-y-3">
-                  <p className="text-sm text-gray-500 font-medium">
-                    {selectedJournal.files.length} file{selectedJournal.files.length > 1 ? "s" : ""} available for {selectedYear}
-                  </p>
-                  {selectedJournal.files.map((pdf, i) => (
-                    <Link
-                      key={i}
-                      href={pdf.file}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                      className="flex items-center justify-between gap-3 p-3 bg-gray-50 rounded-xl border border-gray-200 hover:border-green-400 hover:bg-green-50 transition-all duration-200 group"
-                    >
-                      <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-green-700" />
-                        <span className="text-sm font-medium text-gray-800">
-                          {pdf.label}
-                        </span>
-                      </div>
-                      <Download className="w-4 h-4 text-gray-400 group-hover:text-green-700 transition-colors" />
-                    </Link>
-                  ))}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 p-4 bg-green-50 border border-green-200 rounded-xl">
+                    <BookOpen className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      To download the {selectedYear} Trademark Journal, please
+                      proceed to the official IPO Nigeria portal where the
+                      journal files are hosted.
+                    </p>
+                  </div>
+                  <Link
+                    href="https://portal.iponigeria.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-green-700 hover:bg-green-800 text-white font-semibold rounded-xl transition-colors duration-200"
+                  >
+                    <Download className="w-4 h-4" />
+                    Proceed to Portal
+                  </Link>
                 </div>
               ) : (
                 <div className="text-center py-4 text-sm text-gray-400">
