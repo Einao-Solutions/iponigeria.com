@@ -7,7 +7,7 @@ pool:
   name: 'IISPool'   # must match your self-hosted agent pool name exactly
 
 variables:
-  iisDeployPath: 'C:\inetpub\vhosts\iponigeria.com\iponigeria.com'
+  iisDeployPath: 'C:\inetpub\vhosts\iponigeria.com\httpdocs'
   nextOutputDir: 'out'
 
 stages:
