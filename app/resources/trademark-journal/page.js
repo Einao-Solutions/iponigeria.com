@@ -7,6 +7,13 @@ import Link from "next/link";
 
 const journals = [
   {
+    year: 2026,
+    files: [
+      // { label: "Volume 1", file: "/journals/2025/trademark-journal-vol1.pdf" },
+      // { label: "Volume 2", file: "/journals/2025/trademark-journal-vol2.pdf" },
+    ],
+  },
+  {
     year: 2025,
     files: [
       // { label: "Volume 1", file: "/journals/2025/trademark-journal-vol1.pdf" },
@@ -116,7 +123,7 @@ const page = () => {
                     <p className="text-sm text-gray-700 leading-relaxed">
                       To download the {selectedYear} Trademark Journal, please
                       proceed to the official IPO Nigeria portal where the
-                      journal files are hosted.
+                      journals are hosted.
                     </p>
                   </div>
                   <Link
