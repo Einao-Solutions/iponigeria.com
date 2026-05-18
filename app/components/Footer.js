@@ -108,11 +108,26 @@ const Footer = () => {
 
         <hr className="border border-gray-100 my-10" />
 
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <p>© 2025 IPO Nigeria</p>
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm">Powered by</p>
             <Image src={poweredby} alt="Logo" className="h-10 w-24" />
+          </div>
+          <div className="flex gap-4 text-sm">
+            <Link
+              href="/privacy-policy"
+              className="hover:text-gray-200 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">|</span>
+            <Link
+              href="/terms-of-use"
+              className="hover:text-gray-200 transition-colors"
+            >
+              Terms of Use
+            </Link>
           </div>
           <p className="text-right">All Rights Reserved</p>
         </div>
