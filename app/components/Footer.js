@@ -85,14 +85,13 @@ const Footer = () => {
               <Link href="/about" className="cursor-pointer">
                 <p>About Us</p>
               </Link>
-              <Link href="/services" className="cursor-pointer">
-                <p>Our Services</p>
-              </Link>
               <Link href="/resources" className="cursor-pointer">
                 <p>Resources</p>
+              </Link><Link href="/terms-of-use" className="cursor-pointer">
+                <p>Terms of Use</p>
               </Link>
-              <Link href="/contact" className="cursor-pointer">
-                <p>Contact Us</p>
+              <Link href="/privacy-policy" className="cursor-pointer">
+                <p>Privacy Policy</p>
               </Link>
               <Link
                 href="https://www.pebec.gov.ng/reportgov-ng"
@@ -114,7 +113,7 @@ const Footer = () => {
             <p className="text-sm">Powered by</p>
             <Image src={poweredby} alt="Logo" className="h-10 w-24" />
           </div>
-          <div className="flex gap-4 text-sm">
+          {/* <div className="flex gap-4 text-sm">
             <Link
               href="/privacy-policy"
               className="hover:text-gray-200 transition-colors"
@@ -128,7 +127,7 @@ const Footer = () => {
             >
               Terms of Use
             </Link>
-          </div>
+          </div> */}
           <p className="text-right">All Rights Reserved</p>
         </div>
       </div>

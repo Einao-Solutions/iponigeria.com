@@ -22,10 +22,10 @@ const page = () => {
       image: "/services2.jpg",
       buttons: [
         { label: "View Journal", href: "/resources/trademark-journal" },
-        {
-          label: "View Publications",
-          href: "https://portal.iponigeria.com/publications",
-        },
+        // {
+        //   label: "View Publications",
+        //   href: "https://portal.iponigeria.com/publications",
+        // },
       ],
     },
     {
