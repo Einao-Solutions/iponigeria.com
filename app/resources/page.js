@@ -36,13 +36,14 @@ const page = () => {
       image: "/services1.jpg",
       link: "/services-fees",
     },
-    // {
-    //   id: 4,
-    //   title: "PDF and Video Guides on Portal Use",
-    //   description:
-    //     "Download detailed PDF manuals and watch instructional videos to master the IPO Nigeria portal for all your registration needs.",
-    //   image: "/resource3.jpg",
-    // },
+    {
+      id: 4,
+      title: "PDF and Video Guides on Portal Use",
+      description:
+        "Download detailed PDF manuals and watch instructional videos to master the IPO Nigeria portal for all your registration needs.",
+      image: "/resource3.jpg",
+      link: "/resources/portal-guides",
+    },
   ];
 
   return (
