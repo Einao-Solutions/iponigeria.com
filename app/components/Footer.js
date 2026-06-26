@@ -108,7 +108,7 @@ const Footer = () => {
         <hr className="border border-gray-100 my-10" />
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
-          <p>© 2025 IPO Nigeria</p>
+          <p>© 2026 IPO Nigeria</p>
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm">Powered by</p>
             <Image src={poweredby} alt="Logo" className="h-10 w-24" />
